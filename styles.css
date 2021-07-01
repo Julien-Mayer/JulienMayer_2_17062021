@@ -20,27 +20,31 @@ li {
     float:left; 
 }
 
+/* Header */
+
 .nav {
-    position: fixed;
-    top: 0;
     width: 100%;
-    padding-left: 1,25rem;
-    padding-bottom: 2.5rem;
+    padding: 2.5rem;
     background-color: rgb(255, 255, 255);
     align-items: center;
     justify-content: space-between;
-    height: 3.5rem;
+    height: 2rem;
 }
 
 .nav-home {
     float: left;
-    padding-left: 1rem;
 }
 
 .nav-links {
     float: right;
-    margin: 1rem;
+    margin-right: 4rem;
 }
+
+.nav-links a:hover {
+    border-top: 2px solid #0065fc;
+    padding-top: 3.05rem;
+    color: #0065fc;
+  }
 
 .nav-link {
     margin-left: 0.5rem;
@@ -64,4 +68,142 @@ li {
 
 .gray {
     color: #535353;
+}
+
+/* Bouton Rechercher */
+
+#findHotel {
+    padding-left: 2.5rem;
+}
+
+#searchHotel {
+    display: inline-flex;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.fa-map-marker-alt {
+    font-size: 25px;
+    background-color: #f2f2f2;
+    border-radius: 1rem 0 0 1rem;
+    padding: 0.8rem 0.8rem;
+    width: 2rem;
+    text-align: center;
+}
+  
+input {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+    border-right: none;
+    border-left: none;
+    border-top: #f2f2f2 1px solid;
+    border-bottom: #f2f2f2 1px solid;
+    padding: 0 1.5em;
+    width: 80%;
+    height: 50px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #0065fc;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0 -50px;
+}
+
+.search-button {
+    border-radius: 0px 18px 18px 0;
+    padding: 15px;
+    background-color: #0065fc;
+    color: white;
+    position: relative;
+    right: -3rem;
+  }
+
+  /* Filtres */
+
+.filters {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.filter-list:hover {
+    background: #0065fc;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.filter-list {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-left: 2rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2em;
+    font-weight: bold;
+}
+
+.filter-picture {
+    padding: 1rem 1rem;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+.filter-name {
+font-weight: bold;
+padding-right: 1.5em;
+padding-left: 0.5em;
+cursor: pointer;
+}
+
+.fas {
+    color: #0065fc;
+}
+
+.fa-map-marker-alt {
+    color: black;
+}
+
+.fa-info-circle {
+    color: white;
+    background-color: #0065fc;
+    margin-right: 0.5rem;
+}
+
+/* Hébergements */
+
+#hotel {
+    display: flex;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+#hotelMarseille {
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    width: 62%;
+    padding: 1.25rem;
+    margin: 0 1.5rem 0 0;
+  }
+
+.host-card {
+    width: 30%;
+    width: calc(33.3% - 10px);
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0 5px 20px 5px;
+    box-shadow: 0 5px 16px #0000002e;
 }
