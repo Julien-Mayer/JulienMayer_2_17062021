@@ -4,22 +4,25 @@ body {
 	justify-content: space-around;
 }
 
-#container {
-	width: 100%;
-	max-width: 1440px;
+.header {
+    max-width: 1440px;
+}
+
+.main {
+    max-width: 1440px;
 }
 
 a {
     color: inherit;
     text-decoration: none;
 }
-  
 
 /* Header */
 
 .nav {
     width: 100%;
     padding: 2.5rem;
+    padding-top: 1.5rem;
     background-color: rgb(255, 255, 255);
     align-items: center;
     justify-content: space-between;
@@ -36,8 +39,8 @@ a {
 }
 
 .nav-links a:hover {
-    border-top: 2px solid #0065fc;
-    padding-top: 3.05rem;
+    border-top: 3px solid #0065fc;
+    padding-top: 2rem;
     color: #0065fc;
 }
 
@@ -205,6 +208,9 @@ cursor: pointer;
 }
 
 #hotelMarseille {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #f2f2f2;
     border-radius: 1.5rem;
     width: 60%;
@@ -229,6 +235,10 @@ cursor: pointer;
     margin: 0 0.32rem 1.25rem 0.32rem;
     box-shadow: 0 0.32rem 1rem #0000002e;
     line-height: 0;
+}
+
+.host-card:hover {
+    transform: scale(1.05);
 }
 
 .card-header {
@@ -269,15 +279,25 @@ cursor: pointer;
     background-color: #f2f2f2;
     border-radius: 1.5rem;
     width: 30%;
-    padding: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     margin: 0 1.5rem 0 0;
+}
+
+.popular-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-chart-line {
+    color: black;
 }
 
 .popular-card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
+    height: 9rem;
     background: white;
     border-radius: 1.25rem;
     padding: 0.3125rem;
@@ -287,25 +307,205 @@ cursor: pointer;
     line-height: 0;
 }
 
-.image-full-popular {
+.popular-card:hover {
+    transform: scale(1.05);
+}
+
+.popular-card-contener {
     display: flex;
-    justify-content: start;
-    max-width: 10rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: -0.5rem 0.7rem 0 0.7rem;
+    padding-bottom: 0.5rem;
+}
+
+.popular-card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular-card-title {
+    line-height: 1.5rem;
+}
+
+.popular-card-footer [data-active=true] {
+    color: #0065fc;
+}
+
+.popular-card-footer [data-active=false] {
+    color: #acacac;
+}
+
+.popular-card-link {
+    display: flex;
+    flex-direction: row;
+}
+
+.popular-card-img {
+    width: 33%;
+    min-width: 33%;
+    height: 100%;
+}
+
+
+.image-full-popular {
+    object-fit: cover;
     width: 100%;
-    max-height: 100%;
-    height: 7rem;
-    border-radius: 1.25rem 0 0 1.25rem;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
 }
 
 /* Activités */
 
-#activites{
+#activities {
+    padding: 2.5rem;
+}
+
+.activities-Marseille-contener {
     display: flex;
-    padding-top: 2.5rem;
-    padding-left: 2.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.activities-Marseille-contener-block1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 45%;
+    height: 90%;
+}
+
+.activities-Marseille-column1 {
+    width: 45%;
+}
+
+.activities-Marseille-column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.activities-Marseille-contener-block2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 48%;
+    height: 90%;
+}
+
+.activities-Marseille-tall-card {
+    height: 30rem;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem 1px #f2f2f2;
+}
+
+.activities-Marseille-tall-card:hover {
+    transform: scale(1.05);
+}
+
+.activities-Marseille-medium-card {
+    height: 18rem;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem 1px #f2f2f2;
+}
+
+.activities-Marseille-medium-card:hover {
+    transform: scale(1.05);
+}
+
+.activities-Marseille-small-card {
+    height: 10rem;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem 1px #f2f2f2;
+}
+
+.activities-Marseille-small-card:hover {
+    transform: scale(1.05);
+}
+
+.activities-image1 {
+    background-image: url("./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90%;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.activities-image2 {
+    background-image: url("./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 83%;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.activities-image3 {
+    background-image: url("./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70%;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.activities-image4 {
+    background-image: url("./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90%;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.activities-image5 {
+    background-image: url("./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70%;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.activities-image6 {
+    background-image: url("./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 83%;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.activities-card-title {
+    margin-left: 1.5rem;
 }
 
 /* Footer */
+
+#footer {
+    background-color: #F2F2F2;
+    line-height: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.footer-column {
+    width: 30%;
+}
 
 ul {
     padding:0;
@@ -315,5 +515,4 @@ ul {
 
 li {
     margin-left:auto;
-    float:left; 
 }
