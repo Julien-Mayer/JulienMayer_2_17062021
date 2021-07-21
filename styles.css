@@ -669,4 +669,47 @@ li {
     .filter-list {
         margin: 0.5rem 0.5rem 0.5rem 0;
     }
+    #hotel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #hotelMarseille {
+        background-color: white;
+        border: none;
+        box-shadow: none;
+        width: auto;
+        margin: 0 0.6rem 0 0.6rem;
+        padding: 0;
+    }
+    .hotel-card{
+        max-width: 400px;
+    }
+    .host-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    .image-full {
+        object-fit: cover;
+    }
+    .more {
+        padding: 1.5rem 0 1.5rem 0;
+    }
+    #popular {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        width: 100%;
+        margin-left: -2.5rem;
+    }
+    .popular-card {
+        width: 95%;
+    } 
 }
