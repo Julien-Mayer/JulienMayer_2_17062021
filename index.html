@@ -16,9 +16,9 @@
                         <a href="#home"><img id="logo" src="images/logo/Reservia.svg" alt="Logo entreprise" class=""></a>
                     </div>
                     <div class="nav-links">
-                        <a href="#hotel" class="nav-link nav-link-gap blue">Hébergements</a>
-                        <a href="#activities" class="nav-link nav-link-gap gray">Activités</a>
-                        <a href="#" class="nav-link nav-link-gap bold blue">S'inscrire</a>
+                        <a href="#hotel" class="nav-link3 nav-link-gap blue">Hébergements</a>
+                        <a href="#activities" class="nav-link2 nav-link-gap gray">Activités</a>
+                        <a href="#" class="nav-link1 nav-link-gap bold blue">S'inscrire</a>
                     </div>
                 </nav>
             </header>
@@ -31,40 +31,44 @@
                     <div id="searchHotel" class="">
                         <i class="fas fa-map-marker-alt"></i>
                         <form>
-                            <div>
+                            <div class="search">
                               <label for="map-search"></label>
                               <input type="search" id="map-search" name="q" placeholder="Marseille, France">
                               <button class="search-button">Rechercher</button>
                             </div>
                           </form>
+                        <i class="fas fa-search"></i>
                     </div>
                     <div id="filters" class="">
                         <div class="filters">
-                            <h3>Filtres</h3>
-                            <div class="filter-list">
-                                <div class="filter-picture">
-                                    <i class="fas fa-money-bill-wave icons"></i>
+                            <h3 class="filters-title">Filtres</h3>
+                            <div class="filters-list">
+                                <div class="filter-list">
+                                    <div class="filter-picture">
+                                        <i class="fas fa-money-bill-wave icons"></i>
+                                    </div>
+                                    <span class="filter-name">Économique</span>
                                 </div>
-                                <span class="filter-name">Économique</span>
-                            </div>
-                            <div class="filter-list">
-                                <div class="filter-picture">
-                                    <i class="fas fa-child icons"></i>
+                                <div class="filter-list">
+                                    <div class="filter-picture">
+                                        <i class="fas fa-child icons"></i>
+                                    </div>
+                                    <span class="filter-name">Familial</span>
                                 </div>
-                                <span class="filter-name">Familial</span>
-                            </div>
-                            <div class="filter-list">
-                                <div class="filter-picture">
-                                    <i class="fas fa-heart icons"></i>
+                                <div class="filter-list">
+                                    <div class="filter-picture">
+                                        <i class="fas fa-heart icons"></i>
+                                    </div>
+                                    <span class="filter-name">Romantique</span>
                                 </div>
-                                <span class="filter-name">Romantique</span>
-                            </div>
-                            <div class="filter-list">
-                                <div class="filter-picture">
-                                    <i class="fas fa-dog icons"></i>
+                                <div class="filter-list">
+                                    <div class="filter-picture">
+                                        <i class="fas fa-dog icons"></i>
+                                    </div>
+                                    <span class="filter-name">Animaux autorisés</span>
                                 </div>
-                                <span class="filter-name">Animaux autorisés</span>
                             </div>
+                            
                         </div>
                         <div class="search-info">
                             <div class="search-info-icon">
@@ -83,7 +87,7 @@
                                     <img class="image-full" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge de la cannebière">
                                     <div class="card-header">
                                         <h4 class="card-title">Auberge de la Cannebière</h4>
-                                        <p>Nuit a partir de <span class="font-bold">25€</span></p>
+                                        <p class="card-price">Nuit a partir de <span class="font-bold">25€</span></p>
                                     </div>
                                     <div class="card-header">
                                         <span class="icon-blue"><i class="fas fa-star" data-active="true"></i></span>
@@ -99,7 +103,7 @@
                                     <img class="image-full" src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port">
                                     <div class="card-header">
                                         <h4 class="card-title">Hôtel du port</h4>
-                                        <p>Nuit a partir de 52<span class="font-bold">€</span></p>
+                                        <p class="card-price">Nuit a partir de 52<span class="font-bold">€</span></p>
                                     </div>
                                     <div class="card-header">
                                         <span class="icon-blue"><i class="fas fa-star" data-active="true"></i></span>
@@ -115,7 +119,7 @@
                                     <img class="image-full" src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes">
                                     <div class="card-header">
                                         <h4 class="card-title">Hôtel Les mouettes</h4>
-                                        <p>Nuit a partir de 76<span class="font-bold">€</span></p>
+                                        <p class="card-price">Nuit a partir de 76<span class="font-bold">€</span></p>
                                     </div>
                                     <div class="card-header">
                                         <span class="icon-blue"><i class="fas fa-star" data-active="true"></i></span>
@@ -131,7 +135,7 @@
                                     <img class="image-full" src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel de la mer">
                                     <div class="card-header">
                                         <h4 class="card-title">Hôtel de la mer</h4>
-                                        <p>Nuit a partir de 46<span class="font-bold">€</span></p>
+                                        <p class="card-price">Nuit a partir de 46<span class="font-bold">€</span></p>
                                     </div>
                                     <div class="card-header">
                                         <span class="icon-blue"><i class="fas fa-star" data-active="true"></i></span>
@@ -147,7 +151,7 @@
                                     <img class="image-full" src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier">
                                     <div class="card-header">
                                         <h4 class="card-title">Auberge Le Panier</h4>
-                                        <p>Nuit a partir de <span class="font-bold">23€</span></p>
+                                        <p class="card-price">Nuit a partir de <span class="font-bold">23€</span></p>
                                     </div>
                                     <div class="card-header">
                                         <span class="icon-blue"><i class="fas fa-star" data-active="true"></i></span>
@@ -163,7 +167,7 @@
                                     <img class="image-full" src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel chez amina">
                                     <div class="card-header">
                                         <h4 class="card-title">Hôtel chez Amina</h4>
-                                        <p>Nuit a partir de 96<span class="font-bold">€</span></p>
+                                        <p class="card-price">Nuit a partir de 96<span class="font-bold">€</span></p>
                                     </div>
                                     <div class="card-header">
                                         <span class="icon-blue"><i class="fas fa-star" data-active="true"></i></span>
